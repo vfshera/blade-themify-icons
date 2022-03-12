@@ -46,11 +46,13 @@ class CompilesIconsTest extends TestCase
     /** @test */
     public function it_can_add_styles_to_icons()
     {
-        $result = svg('heroicon-o-bell', ['style' => 'color: #555'])->toHtml();
+        $result = svg('themify-zip', ['style' => 'color: #555'])->toHtml();
 
         $expected = <<<'SVG'
-            <svg style="color: #555" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+            <svg version="1.1" style="color: #555" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+            <g>
+            </g>
+                <path d="M9.667 0h-7.667v17h13v-11.692l-5.333-5.308zM10 1.742l3.273 3.258h-3.273v-3.258zM3 16v-15h3v1h1v-1h2v5h5v10h-11zM5 8h1v1h-1v-1zM6 8v-1h1v1h-1zM6 6v-1h1v1h-1zM5 6h1v1h-1v-1zM5 4h1v1h-1v-1zM6 4v-1h1v1h-1zM5 2h1v1h-1v-1zM6 9.389c-1.103 0-2 0.897-2 2s0.897 2 2 2c0.062 0 0.121-0.007 0.219-0.020 0.646-0.071 1.218-0.455 1.531-1.026 0.166-0.303 0.25-0.624 0.25-0.954 0-1.103-0.897-2-2-2zM6.873 11.864c-0.156 0.285-0.441 0.477-0.762 0.512l-0.112 0.014c-0.551 0-0.999-0.449-0.999-1s0.449-1 1-1 1 0.449 1 1c0 0.159-0.043 0.319-0.127 0.474z" fill="#000000" />
             </svg>
             SVG;
 
